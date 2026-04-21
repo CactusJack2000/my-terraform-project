@@ -3,7 +3,7 @@ resource "aws_instance" "app_server" {
   # resource type ^^^        # resource name ^^^
 
   ami           = "ami-0e12ffc2dd465f6e4"   # Amazon Linux 2
-  instance_type = "t3.medium"
+  instance_type = "t3.small"
 
   tags = {
     Name = "ecommerce-app"
