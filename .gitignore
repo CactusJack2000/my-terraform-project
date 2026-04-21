@@ -1,0 +1,26 @@
+# Terraform providers and plugins (large binaries)
+.terraform/
+
+# State files (can contain secrets)
+terraform.tfstate
+terraform.tfstate.backup
+*.tfstate
+*.tfstate.*
+
+# Crash logs
+crash.log
+crash.*.log
+
+# Terraform variable files (may contain secrets)
+*.tfvars
+*.tfvars.json
+!example.tfvars
+
+# Override files
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Lock file IS committed intentionally (do not ignore)
+# .terraform.lock.hcl
